@@ -1,5 +1,5 @@
 const { generateRsaKeyPair, signMessage, verifyMessage } = require('./crypto');
-const { findNonce, sha256Hex } = require('./pow');
+const { findNonce } = require('./pow');
 
 async function runDemo() {
   const nickname = process.env.NICKNAME || 'david';
